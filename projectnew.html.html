@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+ body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(back) no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background: #78c0ff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: linear-gradient(90deg, #ff8c00, #ff4500);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .destination {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .destination img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .destination a {
+            display: block;
+            text-decoration: none;
+        }.bba{
+     display: flex;
+     flex-direction: column;
+
+     align-items:center;
+        }.ba{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 50px;
+        }.bx{
+            background-color:#ff4500;
+            padding: 20px;
+        }.bx2{
+            background-color: brown;
+            padding: 20px;
+        }.be{
+            background-color: #ff4500;
+            padding: 20px;
+            text-align: center;
+        
+        }.bb{
+            background-color: #ff4500;
+            padding: 20px;
+        }#sevices{
+            display: flex;
+            flex-direction: column;
+        }.bn{
+        padding: 30px;
+        text-decoration:underline;
+        }button{
+            background-color: aqua;
+            padding: 5px;
+        }#destinations{
+            display: grid;
+            grid-template-columns: repeat(2,3fr);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TravelBuddy</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact ">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1 class="bn"><b>Welcome to TravelBuddy</b></h1>
+        <p>Your gateway to amazing travel experiences.<br><br><br>More Than 99+ Countries In The Categorized.
+        <br><br><br> Safety And Comfort Is Our First Priority</p>
+    </section>
+    <h2 class="be">Popular Destinations</h2>
+    <section id="destinations">
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Maldives" target="_blank">
+            <img src="maldivies" height="250" width="250" alt="Beautiful Beach">
+            <div class="text-overlay">Maldives - Experience the best beaches and clear waters.</a></div>    </div>
+    
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Switzerland" target="_blank">
+            <img src="switzerland" height="250" width="250" alt="Mountains">
+            <div class="text-overlay">Switzerland - Breathtaking mountains and scenic landscapes.</a></div></div>
+        </div>
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Paris" target="_blank">
+            <img src="paris.jfif" height="250" width="250" alt="Paris">
+            <div class="text-overlay">Paris - A romantic destination with historical sites.</a></div></div>
+        </div>
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Dubai" target="_blank">
+                <img src="dubai" height="250" width="250" alt="dubai">
+            <div class="text-overlay">Dubai - A destination for all ages, richest country in the world.</a></div>
+        </div>
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Bangkok" target="_blank">
+            <img src="bangog" height="250" width="250" alt="Bangkok">
+            <div class="text-overlay">Bangkok - Enjoy vibrant street life, fun day and night.</a></div>
+        </div>
+        <div class="destination">
+            <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank">
+            <img src="singapore" height="250" width="250" alt="Singapore">
+            <div class="text-overlay">Singapore - One of the most famous modern cities in the world.</a></div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2 class="bb">Our Paidpartner Services</h2>
+        <ul>
+            <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiihPDP0KSLAxW4QkgAHZn5FTIYABAJGgJjZQ&ae=2&aspm=1&co=1&ase=2&gclid=CjwKCAiAzPy8BhBoEiwAbnM9O6DEVazf-KcBzh0SuHoFJoBMKvZ47dKKTAXzjW284DGFfjExVtGjdBoCRW4QAvD_BwE&ei=tDSfZ8HCH-zgseMPx7T6GA&ohost=www.google.com&cid=CAESVeD296CepMKDjmpdzMUYrzdWZaw1qwPYKWd2cBUS1Lh1juI5yaNXDgnLkoo_rArDcxwrxqTJsmosceEZZbIU3cTapd9FDtD6Lnbhtru4s_HbytP36y0&sig=AOD64_1JtGckVkhx5AhxAndMOOZ_yGP_ww&q&sqi=2&nis=4&adurl&ved=2ahUKEwjB7N3P0KSLAxVscGwGHUeaHgMQ0Qx6BAgHEAE"><b>Flight Bookings(IXIGO AIR)</b></a></li>
+            <li><a href="https://www.makemytrip.com/hotels/"><b>Hotel Reservations(Make My Trip)</b></a></li>
+            <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjplOiy0aSLAxW_omYCHU-FF7kYABABGgJzbQ&ae=2&aspm=1&co=1&ase=5&gclid=CjwKCAiAzPy8BhBoEiwAbnM9OwypvaxSj9frA79s4Twa_c-5obyhz6SsPhmgCZhZR5NL4LZEaaLm_hoCooIQAvD_BwE&ohost=www.google.com&cid=CAESVeD2bfbLjWOVgJp7b4o6wqi2kGIKnSBwSEJWwxKQSdmjqJJ-o_RwOlJKpb5-dKFelti7xOAq7E25DKhxrQWKEoLxzXKsFRpYwt0MpcmAzZnkM0DOkLQ&sig=AOD64_1qWye3-SbJ1o2zcOaXBKL331vo-A&q&adurl&ved=2ahUKEwjSn-Ky0aSLAxVFQ2cHHRW7OVgQ0Qx6BAgMEAQ"><b>Guided Tours(Get Your Guide)</b></a></li>
+            <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinrZbY0aSLAxWgHYMDHaThA4MYABAFGgJzZg&ae=2&aspm=1&co=1&ase=5&gclid=CjwKCAiAzPy8BhBoEiwAbnM9O2p_N0zw4ILe_W_9oXRSbiHlL4GthTRGbsBDhOBJQWj2R4m4ysGyVhoC0nwQAvD_BwE&ohost=www.google.com&cid=CAESVeD2pOQtZGaUnRska0PhDBv_RmnwZWr9hwmAF3NeVeGcl0047ese8_ImMpQjE5vKQjgA9QlnPxUJ_UxBxtsc8Lk0NlprdOy-WA0AdYFvj3yvppaJYd4&sig=AOD64_2MzhagJYaV3VxjBargARY9iLzuew&q&adurl&ved=2ahUKEwju_I_Y0aSLAxUlTmwGHS6yGUAQ0Qx6BAgJEAE"><b>Travel Insurance(TATA AIG)</b></a></li>
+        </ul>
+    </section>
+    
+    <section id="testimonials">
+    <h2 class="bx">What Our Clients Say</h2>
+        <blockquote><b>"An unforgettable journey! Highly recommended." - Mourya</b></blockquote>
+        <blockquote><b>"Excellent service and great destinations!" - KSteve</b></blockquote>
+        <blockquote><b>"An amazing travel website with unbeatable deals, seamless booking, and excellent customer service!" - Karunakar</b></blockquote>
+        <blockquote><B>"Best Services Ever I Have Received" - Dinnu</B></blockquote>
+    </section>
+    
+    <section id="contact">
+        <h2 class="bx2">Contact Us</h2>
+        <form class="bba">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email"><B>Email:</B></label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message"><b>Message:</b></label>
+            <textarea id="message" name="message" required></textarea><br>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer class="ba">
+        <h1>&copy; 2025 Travel Explorer. All Rights Reserved.</h1>
+    </footer>
+</body>
+</html>
